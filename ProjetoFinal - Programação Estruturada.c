@@ -24,7 +24,7 @@ typedef struct
 	int ID_Bairro;
 } reg_PessoaBairro;  
 	
-main()
+int main()
 {
 	setlocale(LC_ALL, "Portuguese");
 	system("color 0E");
@@ -47,10 +47,10 @@ main()
 	bairros[0].ID_Bairro = 1; strcpy(bairros[0].bairro,"Bela Vista");
 	bairros[1].ID_Bairro = 2; strcpy(bairros[1].bairro,"Cajazeiras");
 	bairros[2].ID_Bairro = 3; strcpy(bairros[2].bairro,"Cristo Redentor");
-	bairros[3].ID_Bairro = 4; strcpy(bairros[3].bairro,"Joaquim Távora");
-	bairros[4].ID_Bairro = 5; strcpy(bairros[4].bairro,"João XXIII");
-	bairros[5].ID_Bairro = 6; strcpy(bairros[5].bairro,"São Gerardo");
-	bairros[6].ID_Bairro = 7; strcpy(bairros[6].bairro,"Vicente Pinzón");
+	bairros[3].ID_Bairro = 4; strcpy(bairros[3].bairro,"Joaquim TÃ¡vora");
+	bairros[4].ID_Bairro = 5; strcpy(bairros[4].bairro,"JoÃ£o XXIII");
+	bairros[5].ID_Bairro = 6; strcpy(bairros[5].bairro,"SÃ£o Gerardo");
+	bairros[6].ID_Bairro = 7; strcpy(bairros[6].bairro,"Vicente PinzÃ³n");
 	bairros[7].ID_Bairro = 8; strcpy(bairros[7].bairro,"Vila Pery");
 	bairros[8].ID_Bairro = 9; strcpy(bairros[8].bairro,"Montese");
 	bairros[9].ID_Bairro = 10; strcpy(bairros[9].bairro,"Planalto Ayrton Senna");
@@ -77,9 +77,9 @@ main()
 	printf("==============================================\n");
 	printf(" PESQUISA: SISTEMA DE TRANSPORTE DE FORTALEZA \n");
 	printf("==============================================\n");
-	printf("                MENU DE OPÇÕES                \n");
+	printf("                MENU DE OPÃ‡Ã•ES                \n");
 	printf("==============================================\n");
-	printf("1: Ver lista de IDs entrevistados\n2: Ver lista completa de entrevistados\n3: Ver entrevistado por ID\n\n0: Sair do programa\n\nOBS: Para melhor visualização, \na tela será apagada após a escolha da opção\n");
+	printf("1: Ver lista de IDs entrevistados\n2: Ver lista completa de entrevistados\n3: Ver entrevistado por ID\n\n0: Sair do programa\n\nOBS: Para melhor visualizaï¿½ï¿½o, \na tela serï¿½ apagada apï¿½s a escolha da opï¿½ï¿½o\n");
 	printf("==============================================\n");
 	scanf("%d",&opc);
 	
@@ -94,7 +94,7 @@ main()
 			int ID=0;
 			while(ID<12)
 			{
-				printf("ID Nº%i: %i - %s\n",++ID,pessoa[ID].ID_Pessoa,pessoa[ID].nome);
+				printf("ID Nï¿½%i: %i - %s\n",++ID,pessoa[ID].ID_Pessoa,pessoa[ID].nome);
 			}
 		printf("==============================================\n");
 		system("pause");
@@ -152,7 +152,7 @@ main()
 				}
 				else
 				{
-					printf("\aERRO: ID NÃO ECONTRADO\n");
+					printf("\aERRO: ID Nï¿½O ECONTRADO\n");
 				}
 				printf("==============================================\n");
 				system("pause");
@@ -161,13 +161,13 @@ main()
 			}
 		
 			case 0:
-				printf("ATÉ LOGO\n");
+				printf("ATÃ‰ LOGO\n");
 				printf("==============================================\n");
 				break;
 			
 		
 			default:
-				printf("\aERRO: OPÇÃO INVÁLIDA\nPressione qualquer tecla para limpar a tela e retornar ao menu\n");
+				printf("\aERRO: OPÃ‡ÃƒOO INVÃLIDA\nPressione qualquer tecla para limpar a tela e retornar ao menu\n");
 				system("pause");
 				system("cls");
 		}
